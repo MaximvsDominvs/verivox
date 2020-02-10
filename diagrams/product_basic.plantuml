@@ -1,0 +1,9 @@
+@startuml product_basic
+class Product {
+	+ string Name
+  - double CostPerYear
+  - double ConsumptionLimit
+  - double ConsumptionCost
+  + double AnnualExpenses(double consumption)
+}
+@enduml

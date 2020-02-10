@@ -1,0 +1,20 @@
+@startuml product
+abstract class Product {
+	+ string Name
+  + double AnnualExpenses(double consumption)
+}
+
+class ProductA {
+	- double CostPerMonth
+  - double ConsumptionCost    
+}
+
+class ProductB {
+	- double CostPerYear
+  - double ConsumptionLimit
+  - double ConsumptionCost
+}
+
+Product --|> ProductA
+Product --|> ProductB
+@enduml
