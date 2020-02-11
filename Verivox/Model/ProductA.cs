@@ -18,7 +18,6 @@
 
         public override double AnnualExpenses(double consumption)
         {
-            // TODO: test
             return _costPerMonth * 12 + _consumptionCost * consumption;
         }
     }

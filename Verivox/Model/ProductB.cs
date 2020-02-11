@@ -21,7 +21,6 @@
 
         public override double AnnualExpenses(double consumption)
         {
-            // TODO: test
             double extraConsumption = consumption - _consumptionLimit;
             return _costPerYear + Heaviside(extraConsumption) * _consumptionCost;
         }
