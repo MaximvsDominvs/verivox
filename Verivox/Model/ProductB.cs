@@ -13,6 +13,7 @@
         /// <param name="consumptionCost">price per each kWh above consumption limit (EUR/kWh)</param>
         public ProductB(double costPerYear, double consumptionLimit, double consumptionCost)
         {
+            Name = "Packaged tariff";
             _costPerYear = costPerYear;
             _consumptionLimit = consumptionLimit;
             _consumptionCost = consumptionCost;

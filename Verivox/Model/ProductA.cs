@@ -11,6 +11,7 @@
         /// <param name="consumptionCost">price for energy consumed (EUR/kWh)</param>
         public ProductA(double costPerMonth, double consumptionCost)
         {
+            Name = "basic electricity tariff";
             _costPerMonth = costPerMonth;
             _consumptionCost = consumptionCost;
         }
