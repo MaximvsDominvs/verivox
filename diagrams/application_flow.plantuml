@@ -1,0 +1,13 @@
+@startuml software_design
+() "Start" as P1
+rectangle "Console Application" as CA
+rectangle "Input" as CI
+rectangle "Calculate Annual Costs" as CAC
+rectangle "Output" as CO
+
+P1 -> CA
+CA -> CI: console
+CI --> CAC: consumption
+CAC -left-> CO: console
+CO -up-> CA
+@enduml
